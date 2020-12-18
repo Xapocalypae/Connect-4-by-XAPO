@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <link href="./fontawesome-free-5.14.0-web/css/all.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    < link rel = "preconnect"
+    href = "https://fonts.gstatic.com" >
+      <
+      link href = "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+    rel = "stylesheet" >
+      <
+      link href = "fontawesome-free-5.14.0-web/css/all.css"
+    rel = "stylesheet" >
+  </script>
+  <title>Connect-4</title>
+</head>
+
+<body class="bg">
+  <nav class="navbar shadow">
+    <a class="navbar-brand mx-auto" href="#">Connect-4 By XAPO</a>
+  </nav>
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="container">
+            <div class="row">
+              <div class="col msg-window-container">
+                <div class="card shadow " id="msgWindow">
+                  <div class="card-header" id="card-heading"><span class="card-title">Chat with Opponent</span></div>
+                  <div class="card-body" id="msgs">
+                    <div class="msg to">Your turn </div>
+                    <div class="msg from">Your turn </div>
+                  </div>
+                  <div class="card-footer" id="form">
+                    <div class="input-group" id="msgForm" data-sender="me"><input class="form-control" type="text"
+                        placeholder="Type message here" id="msg-box" />
+                      <div class="input-group-append" id="button-send"><button class="btn btn-primary" type="button"
+                          id="send"><i class="fab fa-telegram-plane"></i></button></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="container">
+            <div class="row">
+              <div class="col game-board-container">
+                <div class="card shadow" id="gameWindow">
+                
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="container">
+            <div class="row">
+              <div class="col rules-window-container">
+                <div class="card shadow" id="rulesWindow">
+                  <div class="card-header" id="card-heading"><span class="card-title">How to play</span></div>
+                  <div class="card-body" id="rules">
+                    <div class="how-to overflow-auto">
+                      <ul>
+                        <li>Connect four of your checkers in a row while preventing your opponent from doing the same.
+                        </li>
+                        <li>Before starting, players decide randomly which of them will be the beginner; moves are made
+                          alternatively, one by turn.</li>
+                        <li>Moves entails in placing new pieces on the board; pieces slide downwards from upper holes,
+                          falling down to the last row or piling up on the last piece introduced in the same column. So,
+                          in every turn the introduced piece may be placed at most on seven different squares.</li>
+                        <li>The winner is the first player who gets a straight line made with four own pieces and no
+                          gaps
+                          between them.</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
