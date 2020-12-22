@@ -9,11 +9,12 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
-    < link rel = "preconnect" href = "https://fonts.gstatic.com" >
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <link rel = "preconnect" href = "https://fonts.gstatic.com" >
       <link href = "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel = "stylesheet" >
-      <link href = "fontawesome-free-5.14.0-web/css/all.css" rel = "stylesheet">
-  </script>
+      <link href = "fontawesome-free-5.14.0-web/css/all.css" rel = "stylesheet" >
+      
+  
   <title>Connect-4</title>
 </head>
 
@@ -32,13 +33,15 @@
                   <div class="card-header" id="card-heading"><span class="card-title">Chat with Opponent</span></div>
                   <div class="card-body" id="msgs">
                     <div class="msg to shadow">Your turn </div>
-                    <div class="msg from shadow">Your turn </div>
+                    <div class="msg from shadow">ok </div>
+                    
                   </div>
-                  <div class="card-footer" id="form">
-                    <div class="input-group" id="msgForm" data-sender="me"><input class="form-control shadow" id="msg-box"
-                        type="text" placeholder="Type message here"  />
-                      <div class="input-group-append" id="button-send"><button class="btn btn-primary shadow"
-                          type="submit" id="send"><i class="fab fa-telegram-plane"></i></button></div>
+                  <div class="card-footer" id="form-msg">
+                    <div class="form" id="form">
+                      <div class="input-group" id="msgForm" data-sender="me">
+                        <input class="form-control shadow" id="msg-box" type="text" placeholder="Type message here" />
+                        <button class="btn btn-primary shadow" type="submit" id="send">S</i></button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -108,7 +111,7 @@
                     <div class="col text-center" id="game-btn">
                       <div class="invite mt-3 mb-5">
                         <button type="button" class="btn btn-primary shadow" id="invite-btn">Invite your friend</button>
-                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -148,5 +151,6 @@
     </div>
   </main>
 </body>
-
+<script defer src = "http://localhost:3000/socket.io/socket.io.js"></script>
+<script defer src = "script.js"></script>
 </html>

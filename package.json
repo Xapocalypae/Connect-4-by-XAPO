@@ -1,0 +1,26 @@
+{
+  "name": "connect-4-bootstrap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xapocalypae/Connect-4-by-XAPO.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Xapocalypae/Connect-4-by-XAPO/issues"
+  },
+  "homepage": "https://github.com/Xapocalypae/Connect-4-by-XAPO#readme",
+  "dependencies": {
+    "socket.io": "^3.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
